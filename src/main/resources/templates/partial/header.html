@@ -1,0 +1,13 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="main">
+    <nav>
+        <ul>
+            <li><a href="#" th:href="@{/home}" th:styleappend="${currentPage == 'home'}?'font-weight:bold;'">Home Page</a></li>
+            <li><a href="#" th:href="@{/about}" th:styleappend="${currentPage == 'about'}?'font-weight:bold;'">About</a></li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>
